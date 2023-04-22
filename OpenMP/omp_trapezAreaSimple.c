@@ -20,7 +20,15 @@ int main(){
   scanf("%lf",&b);
   /*Begin Trapezoidal Method: */
   h=fabs(b-a)/n;
-
+  
+  /*
+  Se utiliza la directiva #pragma omp parallel for para paralelizar el ciclo que recorre los subintervalos.
+  La cláusula shared(sum) indica que la variable sum será compartida entre los hilos que se creen.
+  La cláusula private(i,x) indica que las variables i y x serán privadas para cada hilo.
+  El ciclo for va desde 1 hasta n-1, ya que los extremos del intervalo ya se han incluido en el cálculo del área.
+  La variable x se actualiza en cada iteración para que represente el extremo derecho del subintervalo actual.
+  La directiva #pragma omp atomic se utiliza para asegurar que la suma de f(x) en cada subintervalo sea atómica, es decir, que sea ejecutada como una operación única.
+  */
   #pragma omp parallel for shared(sum) private(i,x)
   for(i=1;i<n;i++){
     x=a+i*h;
