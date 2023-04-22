@@ -1,14 +1,13 @@
 #!/bin/bash
-#SBATCH -N 1
-#SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=8
-#SBATCH -t 00:05:00
-
-echo "Inicio de la ejecución: $(date)"
+#SBATCH --job-name=trapezAreaSimple
+#SBATCH --output=trapezAreaSimple_output.txt
+#SBATCH --ntasks=1
+#SBATCH --nodes=1
+#SBATCH --time=00:05:00
+#SBATCH --mem=100
+#SBATCH --cpus-per-task=4
 
 module load gcc/9.3.0
-gcc -fopenmp trapezAreaSimple.c -o trapezAreaSimple
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 
-./trapezAreaSimple
-
-echo "Fin de la ejecución: $(date)"
+srun ./omp_trapezAreaSimple
