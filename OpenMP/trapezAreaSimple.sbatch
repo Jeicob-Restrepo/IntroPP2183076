@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=trapezAreaSimple
-#SBATCH --output=trapezAreaSimple_output.txt
+#SBATCH --output=output_trapezAreaSimple.txt
 #SBATCH --ntasks=1
 #SBATCH --nodes=1
 #SBATCH --time=00:05:00
