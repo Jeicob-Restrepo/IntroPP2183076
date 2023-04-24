@@ -5,5 +5,5 @@
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=4
 
-gcc -fopenmp omp_trapezAreaSimple.C -o omp_trapecio
+gcc -fopenmp omp_trapezAreaSimple.c -o omp_trapecio
 ./omp_trapecio
