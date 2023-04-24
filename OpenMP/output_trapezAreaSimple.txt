@@ -1,0 +1,25 @@
+EJECUCION EN GUANE-1
+
+Enter the no. of sub-intervals: 1000
+
+Enter the initial limit: 3
+
+Enter the final limit: 8
+
+The integral is: 161.666688
+
+--------------------------------------------------------
+
+EJECUCION EN MAQUINA LOCAL
+
+Enter the no. of sub-intervals: 1000
+
+Enter the initial limit: 3
+
+Enter the final limit: 8
+
+The integral is: 161.666688
+
+--------------------------------
+Process exited with return value 29
+Press any key to continue . . .
