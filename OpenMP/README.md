@@ -1,4 +1,4 @@
-#Procedimiento
+# Procedimiento
 Inicialmente se descarga el archivo de ejemplo "trapezAreaSimple.C".
 Luego utilizando OpenMP procedemos a paralelizarlo:
 mediante el codigo ```#pragma omp parallel for shared(sum) private(i,x)``` en este codigo se utiliza la directiva #pragma omp parallel for para paralelizar el ciclo que recorre los subintervalos.
