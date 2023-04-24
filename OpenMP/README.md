@@ -11,3 +11,11 @@ Ya teniendo el nuevo codigo paralelizado, lo que hacemos es acceder a Guane-1, p
 El codigo fue compilado y ejecutado utilizando Dev c++
 ## Imagen de la ejecucion en Guane-1
 ![Captura de pantalla 2023-04-23 201136](https://user-images.githubusercontent.com/82180254/233878409-ee39c055-7fff-4f3d-ab9c-f84c97fd9aeb.png)
+## Archivos
+En la carpeta OpenMP se encuentran 6 archivos en total
+*README.md: En este archivo se encuentra descrito el desarrollo de la actividad.
+*omp_trapezAreaSimple.c: Este es el codigo paralelizado del codigo original "trapezAreaSimple.C".
+*omp_trapezAreaSimple.exe: Este es el programa ejecutable.
+*output_trapezAreaSimple.txt: Se agrupan los resultados obtenidos tanto en Guane-1 como en la maquina local.
+*trapezAreaSimple.C: Este es el codigo de ejemplo.
+*trapezAreaSimple.sbatch: Archivo ```sbatch``` para compilar y ejecutar el codigo en Guane-1.
