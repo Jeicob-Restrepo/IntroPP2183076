@@ -1,3 +1,27 @@
+/*
+
+  Purpose:
+
+    TRANSFORM is an example of a transformation of an EDP using some parameters for Intro PP Students.
+
+  Example:
+
+    23 Apr 2023 7:27:12 PM
+
+  Licensing:
+
+    This code is distributed under the GNU LGPL license.
+
+  Modified:
+
+    23 April 2023
+
+  Author:
+  George 
+  OpenMP Modification:
+  23 april 2023 by Jeicob Restrepo, Universidad Industrial de Santander jeicob2183076@correo.uis.edu.co                   
+  This OpenMP Modification makes a parallelization of the original Code... 
+*/
 #include<stdio.h>
 #include<math.h>
 #include<omp.h>
